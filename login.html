@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form action="{{ url_for('login_user') }}" method="POST">
+        <div>
+            <label for="login_username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="login_password">Password:</label>
+            <input type="password" id="passoword" name="password" required>
+        </div>
+        <input type="submit" value="Login">
+    </form>
+    <h1>Don't have a user?</h1>
+    <button><a href="/register">Registrer</a></button>
+    
+</body>
+</html>
